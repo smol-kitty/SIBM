@@ -11,9 +11,9 @@ body {
       to bottom,
       transparent 0vh,
       transparent 50vh,
-      rgba(16, 12, 108, 0.75) 110vh
+      rgba(16, 12, 108, 0.7) 110vh
     ),
-    url("/assets/images/bg-1.png");
+    url("/assets/images/backgrounds/bg-1.png");
   background-size: 100% 100%;
 }
 .header {
@@ -82,7 +82,7 @@ body {
       rgba(16, 12, 108, 1) 40vw,
       transparent 100vw
     ),
-    url("/assets/images/bg-2.png");
+    url("/assets/images/backgrounds/bg-2.png");
   background-size: 100% 100%;
 }
 
@@ -106,12 +106,16 @@ body {
   );
 }
 
+.sponsors-title {
+  margin-left: 45%;
+  margin-top: 15vh;
+}
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(3, 20vw);
   column-gap: 10vw;
   row-gap: 10vw;
-  padding: 15vh 10vw;
+  padding: 5vh 10vw;
   height: 100%;
 }
 
@@ -131,5 +135,60 @@ body {
   cursor: pointer;
 }
 .sponsors-grid img {
-  width: 80%;
+  max-height: 60%;
+  max-width: 80%;
+}
+
+#gallery {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    white 0vh,
+    rgb(16, 12, 108) 15vh,
+    rgb(16, 12, 108) 100%
+  );
+}
+
+.gallery-title {
+  margin-left: 45%;
+  margin-top: 15vh;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  column-gap: 10vw;
+  row-gap: 10vw;
+  padding: 5vh 10vw;
+  height: 100%;
+}
+.gallery-grid img {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 1rem;
+  transition: transform 0.25s ease-in-out;
+}
+.gallery-grid img:hover {
+  transform: scale(1.1);
+}
+
+#faq {
+  padding: 15vh 20vw;
+  background-color: rgb(16, 12, 108);
+}
+
+.faq-title {
+  width: 100%;
+}
+
+.accordion-item {
+  width: 100%;
+}
+
+#contact {
+  background-color: rgb(16, 12, 108);
+  padding: 15vh 10vw;
+  gap: 2.5vh;
 }
