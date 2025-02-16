@@ -1,0 +1,135 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+#landing {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+  background: linear-gradient(
+      to bottom,
+      transparent 0vh,
+      transparent 50vh,
+      rgba(16, 12, 108, 0.75) 110vh
+    ),
+    url("/assets/images/bg-1.png");
+  background-size: 100% 100%;
+}
+.header {
+  width: 100%;
+  height: 12.5vh;
+  padding: 0 5vw;
+}
+
+.navbar {
+  margin-left: 30vw;
+  gap: 2.5vw;
+  width: fit-content;
+}
+
+.navbar a {
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.sibm-logo {
+  margin-left: 9vw;
+}
+
+.fest-logo {
+  margin-top: 10vh;
+}
+
+.fest-text {
+  margin-left: 10vw;
+}
+
+.landing-button {
+  padding: 1vh 2.5vw;
+  margin-left: 42.5vw;
+  margin-top: 30vh;
+  text-decoration: none;
+  border-radius: 5rem;
+  border: solid 0.15rem white;
+  width: fit-content;
+}
+
+.landing-button:hover {
+  cursor: pointer;
+}
+
+#about-sibm {
+  height: 100vh;
+  width: 100%;
+  background: rgba(16, 12, 108, 1);
+  gap: 5vh;
+  padding: 15vh 17.5vw;
+}
+
+#about-fest {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(16, 12, 108, 1) 0vw,
+      rgba(16, 12, 108, 1) 40vw,
+      transparent 100vw
+    ),
+    url("/assets/images/bg-2.png");
+  background-size: 100% 100%;
+}
+
+.about-fest-text {
+  width: 52.5%;
+  height: 100%;
+  gap: 2.5vh;
+  padding: 12.5vh 10vw;
+}
+
+#sponsors {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    white 0vh,
+    rgb(16, 12, 108) 15vh,
+    rgb(16, 12, 108) 100%
+  );
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  column-gap: 10vw;
+  row-gap: 10vw;
+  padding: 15vh 10vw;
+  height: 100%;
+}
+
+.sponsors-grid div {
+  width: 20vw;
+  height: 20vw;
+  background-color: rgb(13, 9, 84);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 10%;
+}
+
+.sponsors-grid div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.sponsors-grid img {
+  width: 80%;
+}
