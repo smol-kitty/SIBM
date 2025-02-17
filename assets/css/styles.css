@@ -29,7 +29,7 @@ body {
   flex-direction: row;
   position: fixed;
   padding-top: 1vw;
-  background-color: rgb(2, 2, 88);
+  background-color: red;
   padding-bottom: 2.5vh;
   z-index: 10;
 }
@@ -239,7 +239,7 @@ body {
 }
 
 #contact {
-  background-color: rgb(9, 6, 52);
+  background-color: red;
   padding: 15vh 5vw;
   padding-bottom: 2.5vh;
   height: fit-content;
@@ -287,7 +287,7 @@ body {
 
 #events {
   height: fit-content;
-  background-color: rgb(235, 207, 133);
+  background-color: rgb(16, 12, 108);
   padding: 15vh 10vw;
   gap: 0vh;
 }
