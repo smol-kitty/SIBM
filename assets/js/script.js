@@ -2,13 +2,20 @@
 window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY;
   if (scrollPosition > 0) {
-    document.getElementsByClassName("header")[0].classList.add("fixed");
+    const headers = document.getElementsByClassName("header");
+    for (let i = 0; i < headers.length; i++) {
+      headers[i].classList.add("fixed");
+    }
     document.getElementsByClassName("fest-logo")[0].classList.add("fest-fixed");
     document
       .getElementsByClassName("gallery")[0]
       .classList.add("gallery-fixed");
   } else {
-    document.getElementsByClassName("header")[0].classList.remove("fixed");
+    const headers = document.getElementsByClassName("header");
+    for (let i = 0; i < headers.length; i++) {
+      headers[i].classList.remove("fixed");
+    }
+
     document
       .getElementsByClassName("fest-logo")[0]
       .classList.remove("fest-fixed");
