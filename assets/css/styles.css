@@ -686,9 +686,7 @@ body {
   border-radius: 0.5rem;
 }
 .image {
-  width: 100%;
-  height: 0;
-  transform: translateY(-95%);
+  transform: translateY(-85%) translateX(85%);
   object-fit: cover;
   transition: height 1s ease-in-out, transform 1s ease-in-out;
   border: white solid 0.1rem;
@@ -696,8 +694,9 @@ body {
 }
 
 .image.visible {
+  width: 100%;
   height: 100%;
-  transform: translateY(0);
+  transform: translateY(0) translateX(0);
 }
 .gallery-grid div img {
   width: 100%;
