@@ -35,6 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
       content.classList.toggle("open");
     });
   });
+  const images = document.querySelectorAll(".image");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.01 }
+  );
+
+  images.forEach((image) => {
+    observer.observe(image);
+  });
 });
 
 const slider = document.querySelector(".slider");
