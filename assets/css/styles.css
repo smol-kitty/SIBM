@@ -525,10 +525,10 @@ body {
 
 .slide-content {
   position: absolute;
-  left: 39%;
-  width: 22.5vw;
-  height: 59vh;
-  top: 24%;
+  left: 36%;
+  width: 28%;
+  height: 100%;
+  top: 0%;
   border-radius: 1rem;
   background-color: rgba(128, 128, 128);
   opacity: 0;
@@ -620,6 +620,12 @@ body {
     height: 62.5vh;
     transition: transform 0.4s ease-in-out;
   }
+  .slide-content {
+    height: 75%;
+    font-size: 1.25rem;
+    width: 60%;
+    left: 20%;
+  }
 
   .slide {
     flex: 0 0 100%;
@@ -644,9 +650,12 @@ body {
     gap: 1vw;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .events-title {
     font-size: 1.5rem;
+  }
+  .slide-content {
+    font-size: 0.75rem;
   }
 }
 /*Events Section Ends*/
