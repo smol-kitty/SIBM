@@ -40,11 +40,11 @@ body {
 }
 .navbar a {
   width: fit-content;
-  color: black;
+  color: rgb(111, 110, 110);
   text-decoration: none;
 }
 .navbar a:visited {
-  color: black;
+  color: rgb(123, 123, 123);
   text-decoration: none;
 }
 .sibm-logo {
@@ -482,6 +482,7 @@ body {
   background-color: rgb(16, 12, 108);
   padding: 15vh 10vw;
   gap: 0vh;
+  position: relative;
 }
 
 .events-title {
@@ -522,6 +523,41 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.slide-content {
+  position: absolute;
+  left: 39%;
+  width: 22.5vw;
+  height: 59vh;
+  top: 24%;
+  border-radius: 1rem;
+  background-color: rgba(128, 128, 128);
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  font-size: 1.25rem;
+}
+.slide-content:hover {
+  opacity: 1;
+}
+.slide-link {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 1vh 1vw;
+}
+.slide-link:visited {
+  color: white;
+  text-decoration: none;
+}
+.slide-link:hover {
+  cursor: pointer;
+}
 .controls {
   display: flex;
   justify-content: space-between;
