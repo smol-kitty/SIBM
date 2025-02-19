@@ -155,7 +155,6 @@ body {
 }
 #about-fest {
   height: fit-content;
-  min-height: 120vh;
   width: 100%;
   padding-bottom: 10vh;
   background: linear-gradient(
@@ -213,6 +212,16 @@ body {
   #about-fest {
     background-size: cover;
     background-position: center;
+  }
+
+  #about-fest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .about-fest-text {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -457,6 +466,9 @@ body {
   gap: 1vw;
 }
 @media (max-width: 700px) {
+  .fest-logo-dark {
+    margin-bottom: 15vh;
+  }
   #contact {
     flex-direction: column !important;
     align-items: center !important;
@@ -474,7 +486,6 @@ body {
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 15vh;
   }
   .contact-right {
     width: 100%;
@@ -493,6 +504,9 @@ body {
   }
   .club-logo-footer {
     width: 70%;
+  }
+  .icons img {
+    width: 7.5%;
   }
 }
 /*Contact Section Ends*/
@@ -764,7 +778,7 @@ body {
 .sponsors-page {
   width: 100%;
   background-color: rgb(16, 12, 108);
-  padding-top: 20vh;
+  padding-top: 25vh;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -778,7 +792,7 @@ body {
   grid-template-columns: repeat(2, 20vw);
   column-gap: 10vw;
   row-gap: 10vw;
-  padding: 5vh 10vw;
+  padding: 0 10vw 5vh 10vw;
   height: fit-content;
 }
 
@@ -793,7 +807,7 @@ body {
   position: relative;
   gap: 5vh;
   padding: 10% 10%;
-  margin: 5vh 0;
+  margin: 1vh 0;
   color: white;
   /*background-color: rgb(188, 188, 249);*/
   border-radius: 1rem;
@@ -819,7 +833,7 @@ body {
   grid-template-columns: repeat(3, 20vw);
   column-gap: 10vw;
   row-gap: 2.5vh;
-  padding: 2.5vh 10vw;
+  padding: 0 10vw 5vh 10vw;
   height: fit-content;
 }
 
@@ -834,7 +848,7 @@ body {
   position: relative;
   gap: 5vh;
   padding: 10% 10%;
-  margin: 5vh 0;
+  margin: 1vh 0;
   /* background-color: rgb(188, 188, 249);*/
   color: white;
   border-radius: 1rem;
@@ -870,8 +884,9 @@ body {
 @media (max-width: 700px) {
   .sponsors-page-grid {
     grid-template-columns: repeat(1, 80%);
-    gap: 20vw;
+    gap: 0;
     padding: 0;
+    font-size: 0.5rem;
   }
   .sponsors-page-grid div {
     width: 80vw;
@@ -881,9 +896,10 @@ body {
     grid-template-columns: repeat(1, 80%);
     gap: 0vh;
     padding: 0;
+    font-size: 0.5rem;
   }
   .partners-grid div {
-    width: 60vw;
-    height: 20vh;
+    width: 80vw;
+    height: 40vh;
   }
 }
