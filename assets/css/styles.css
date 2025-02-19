@@ -89,6 +89,9 @@ body {
     font-size: 0.5rem;
     width: 40%;
   }
+  .header {
+    height: 7.5vh;
+  }
 }
 @media (max-width: 590px) {
   .navbar {
@@ -222,6 +225,9 @@ body {
   }
   .about-fest-text {
     width: 100%;
+  }
+  .fest-fixed {
+    margin-top: 20vh;
   }
 }
 @media (max-width: 500px) {
@@ -465,6 +471,27 @@ body {
 .icons-left {
   gap: 1vw;
 }
+.copyright {
+  width: 100%;
+  margin-top: 10vh;
+  margin-right: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+.copyright img {
+  width: 100%;
+}
+.copyright p {
+  font-size: 2rem;
+  margin-left: 3vw;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .copyright p {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 700px) {
   .fest-logo-dark {
     margin-bottom: 15vh;
@@ -494,7 +521,7 @@ body {
   .contact-join {
     font-size: 1rem;
     position: absolute;
-    top: 15%;
+    top: 12.5%;
   }
   .icons-left {
     justify-content: center;
@@ -507,6 +534,9 @@ body {
   }
   .icons img {
     width: 7.5%;
+  }
+  .copyright p {
+    font-size: 1rem;
   }
 }
 /*Contact Section Ends*/
@@ -603,7 +633,7 @@ body {
 }
 
 .controls button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: inherit;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -683,7 +713,12 @@ body {
   }
 
   .thumbnails {
+    margin-top: 7.5vh;
     gap: 1vw;
+  }
+  .thumbnail {
+    width: 10vw;
+    height: 10vw;
   }
   #prevBtn {
     width: 5%;
