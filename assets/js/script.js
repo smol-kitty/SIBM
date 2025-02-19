@@ -51,6 +51,42 @@ document.addEventListener("DOMContentLoaded", function () {
   images.forEach((image) => {
     observer.observe(image);
   });
+  const paragraphs = document.querySelectorAll(".right-animate"); 
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1, 
+    }
+  );
+
+  paragraphs.forEach((p) => {
+    observer2.observe(p);
+  });
+  const paragraphs2 = document.querySelectorAll(".left-animate"); 
+
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); 
+        }
+      });
+    },
+    {
+      threshold: 0.01, 
+    }
+  );
+
+  paragraphs2.forEach((p) => {
+    observer3.observe(p);
+  });
 });
 
 const slider = document.querySelector(".slider");
